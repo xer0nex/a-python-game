@@ -398,8 +398,8 @@ class DungeonGenerator:
         rx += margin * 2
         ry += margin * 2
         if sx + rx < self.width and sy + ry < self.height and sx >= 0 and sy >= 0:
-            for x in range(rx):
-                for y in range(ry):
+            for x in range(int(rx)):
+                for y in range(int(ry)):
                     if self.grid[sx + x][sy + y]:
                         return False
             return True

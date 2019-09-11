@@ -39,9 +39,9 @@ class Creature:
         Creature.Creatures.extend([self])
         self.pathNodes = []
         if random.randint(0, 1) == 0:
-            self.img = pygame.image.load('images/test2.png').convert()
+            self.img = pygame.image.load('test2.png').convert()
         else:
-            self.img = pygame.image.load('images/anime1.png').convert()
+            self.img = pygame.image.load('anime1.png').convert()
         # creatures have shape
         
     def getRadius(self):

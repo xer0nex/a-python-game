@@ -107,7 +107,7 @@ class Objects:
     def init():
         for rn in range(6):
             img_name = Objects.get_image_name(rn)
-            Objects.src_images[img_name] = pygame.image.load("images/"+img_name + '.png').convert_alpha()
+            Objects.src_images[img_name] = pygame.image.load(img_name + '.png').convert_alpha()
 
     @staticmethod
     def get_image_name(num):
